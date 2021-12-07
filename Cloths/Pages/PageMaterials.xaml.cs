@@ -156,6 +156,16 @@ namespace Cloths.Pages
         private void cbSort_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             UpdateMaterials();
+            if (cbSort.SelectedIndex == 0)
+            {
+                rbAsc.IsEnabled = false;
+                rbDesc.IsEnabled = false;
+            }
+            else
+            {
+                rbAsc.IsEnabled = true;
+                rbDesc.IsEnabled = true;
+            }
         }
         /// <summary>
         /// Фильтрация

@@ -76,6 +76,7 @@ namespace Cloths.Pages
 
             try
             {
+                currentMaterial.MaterialType = (MaterialType)cbType.SelectedItem;
                 ClothsEntities.GetContext().SaveChanges();
                 Manager.MainFrame.GoBack();
             }
